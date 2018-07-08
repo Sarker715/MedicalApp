@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/medical"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convert Patient Weight"
+        android:textAlignment="center"
+        android:textColor="#101010"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter weight of patient"
+        android:textColor="#101010"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0ea6cc"
+            android:onClick="onRadioButtonClick"
+            android:text="Convert Pound to Kilogram"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0ea6cc"
+            android:onClick="onRadioButtonClick"
+            android:text="Convert Kilogram to Pound"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2fb2cf"
+        android:onClick="onRadioButtonClick"
+        android:text="Convert"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#0ea6cc"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</LinearLayout>
